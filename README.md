@@ -210,7 +210,7 @@ Results are numerically stable across the reference hardware. Minor variations m
 @article{das2026time,
   title     = {{TIME}: Temporally Intelligent Meta-reasoning Engine for
                Context-Triggered Explicit Reasoning},
-  author    = {Das, Susmit},
+  author    = {Susmit Das},
   journal   = {arXiv preprint arXiv:2601.05300},
   year      = {2026}
 }
