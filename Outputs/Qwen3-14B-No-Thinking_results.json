@@ -1,0 +1,237 @@
+{
+    "llm_judge_summary": {
+        "analysis_type": "Accuracy based on mean score per scenario. Overall CI calculated with stratified bootstrap.",
+        "confidence_level": 0.95,
+        "bootstrap_replications": 10000,
+        "seed": 398186433,
+        "overall_accuracy": {
+            "observed_mean_accuracy_percent": 29.48,
+            "confidence_interval_95_percent": [
+                22.47,
+                36.36
+            ],
+            "scenarios": 77
+        },
+        "per_category_accuracy": {
+            "Chronological Retrospection": {
+                "observed_mean_accuracy_percent": 64.55,
+                "confidence_interval_95_percent": [
+                    38.18,
+                    88.18
+                ],
+                "scenarios": 11
+            },
+            "Invalid Time Detection": {
+                "observed_mean_accuracy_percent": 20.91,
+                "confidence_interval_95_percent": [
+                    0.0,
+                    43.64
+                ],
+                "scenarios": 11
+            },
+            "Temporal Adaptivity": {
+                "observed_mean_accuracy_percent": 18.18,
+                "confidence_interval_95_percent": [
+                    2.73,
+                    36.36
+                ],
+                "scenarios": 11
+            },
+            "Temporal Contextual Awareness": {
+                "observed_mean_accuracy_percent": 32.73,
+                "confidence_interval_95_percent": [
+                    8.18,
+                    59.09
+                ],
+                "scenarios": 11
+            },
+            "Temporal Flow Anomaly Detection": {
+                "observed_mean_accuracy_percent": 0.0,
+                "confidence_interval_95_percent": [
+                    0.0,
+                    0.0
+                ],
+                "scenarios": 11
+            },
+            "Time Gap Awareness": {
+                "observed_mean_accuracy_percent": 0.0,
+                "confidence_interval_95_percent": [
+                    0.0,
+                    0.0
+                ],
+                "scenarios": 11
+            },
+            "Timezone Sensitivity": {
+                "observed_mean_accuracy_percent": 70.0,
+                "confidence_interval_95_percent": [
+                    49.09,
+                    87.27
+                ],
+                "scenarios": 11
+            }
+        }
+    },
+    "advanced_structural_stats": {
+        "descriptive_stats": {
+            "output_length_stats": {
+                "min": 9,
+                "max": 1944,
+                "mean": 563.03,
+                "median": 539
+            },
+            "non_reasoning_output_length_stats": {
+                "min": 9,
+                "max": 1944,
+                "mean": 563.03,
+                "median": 539
+            },
+            "markdown_usage_stats": {
+                "percentage_of_runs_with_any_markdown": 95.58,
+                "percentage_with_heavy_markdown": 83.51,
+                "percentage_with_light_markdown": 95.58,
+                "usage_by_type_percentage": {
+                    "heavy": {
+                        "lists": 81.69,
+                        "headings": 71.56,
+                        "blockquotes": 7.27,
+                        "tables": 8.18,
+                        "code_blocks": 11.3
+                    },
+                    "light": {
+                        "bold_or_italics": 95.58
+                    }
+                }
+            },
+            "reasoning_stats": {
+                "number_of_think_blocks_per_run": {
+                    "min": 0,
+                    "max": 0,
+                    "mean": 0.0,
+                    "median": 0
+                },
+                "reasoning_tokens_per_run": {
+                    "min": 0,
+                    "max": 0,
+                    "mean": 0.0,
+                    "median": 0
+                },
+                "reasoning_tokens_per_think_block": {
+                    "min": 0,
+                    "max": 0,
+                    "mean": 0,
+                    "median": 0
+                }
+            },
+            "structural_stats": {
+                "percentage_of_runs_with_think_blocks": 0.0,
+                "think_block_positioning_percentage": {},
+                "percentage_of_runs_with_degenerate_structure": 4.16,
+                "degenerate_structure_breakdown": {
+                    "malformed_blocks_percent": 0.0,
+                    "infinite_repetitions_percent": 4.16,
+                    "reasoning_leakage_percent": 0.0,
+                    "formatting_leakage_percent": 0.0,
+                    "formatting_leakage_by_type": {}
+                }
+            }
+        },
+        "bootstrapped_stats": {
+            "analysis_type": "Metrics aggregated per-scenario, with CIs on the mean of those aggregates.",
+            "replications": 10000,
+            "seed": 3407,
+            "stats": {
+                "mean_output_length": {
+                    "observed_mean": 563.03,
+                    "confidence_interval_95_percent": [
+                        486.58,
+                        641.05
+                    ]
+                },
+                "mean_non_reasoning_length": {
+                    "observed_mean": 563.03,
+                    "confidence_interval_95_percent": [
+                        487.01,
+                        642.35
+                    ]
+                },
+                "percentage_with_heavy_markdown": {
+                    "observed_mean": 83.51,
+                    "confidence_interval_95_percent": [
+                        75.84,
+                        90.26
+                    ]
+                },
+                "percentage_with_light_markdown": {
+                    "observed_mean": 95.58,
+                    "confidence_interval_95_percent": [
+                        90.78,
+                        99.35
+                    ]
+                },
+                "percentage_degenerate": {
+                    "observed_mean": 4.16,
+                    "confidence_interval_95_percent": [
+                        1.56,
+                        7.66
+                    ]
+                },
+                "percentage_malformed": {
+                    "observed_mean": 0.0,
+                    "confidence_interval_95_percent": [
+                        0.0,
+                        0.0
+                    ]
+                },
+                "percentage_infinite_repetitions": {
+                    "observed_mean": 4.16,
+                    "confidence_interval_95_percent": [
+                        1.69,
+                        7.66
+                    ]
+                },
+                "percentage_with_reasoning_leakage": {
+                    "observed_mean": 0.0,
+                    "confidence_interval_95_percent": [
+                        0.0,
+                        0.0
+                    ]
+                },
+                "percentage_with_formatting_leakage": {
+                    "observed_mean": 0.0,
+                    "confidence_interval_95_percent": [
+                        0.0,
+                        0.0
+                    ]
+                },
+                "percentage_with_think_blocks": {
+                    "observed_mean": 0.0,
+                    "confidence_interval_95_percent": [
+                        0.0,
+                        0.0
+                    ]
+                },
+                "mean_number_of_think_blocks": {
+                    "observed_mean": 0.0,
+                    "confidence_interval_95_percent": [
+                        0.0,
+                        0.0
+                    ]
+                },
+                "mean_total_reasoning_tokens": {
+                    "observed_mean": 0.0,
+                    "confidence_interval_95_percent": [
+                        0.0,
+                        0.0
+                    ]
+                },
+                "mean_reasoning_token_percentage": {
+                    "observed_mean": 0.0,
+                    "confidence_interval_95_percent": [
+                        0.0,
+                        0.0
+                    ]
+                }
+            }
+        }
+    }
+}

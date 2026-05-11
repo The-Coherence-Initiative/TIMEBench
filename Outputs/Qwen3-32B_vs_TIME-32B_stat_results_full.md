@@ -1,0 +1,21 @@
+| Statistic | Qwen3 32B No Thinking | Qwen3 32B | TIME 32B | WSR p-value |
+| --- | --- | --- | --- | --- |
+| Benchmark Score | 31.82 (25.71–38.31) | 37.40 (31.56–43.51) | 64.81 (58.18–71.17) | 5.0e-07 |
+| Chronological Retrospection | 61.82 (38.18–83.64) | 60.00 (41.82–77.27) | 63.64 (45.45–80.00) | — |
+| Invalid Time Detection | 11.82 (2.73–25.45) | 31.82 (13.64–51.82) | 52.73 (32.73–71.82) | — |
+| Temporal Adaptivity | 20.00 (1.82–44.55) | 26.36 (7.27–47.27) | 76.36 (64.55–87.27) | — |
+| Temporal Contextual Awareness | 40.00 (13.64–67.27) | 43.64 (20.00–69.09) | 76.36 (58.18–92.73) | — |
+| Temporal Flow Anomaly Detection | 0.91 (0.00–2.73) | 3.64 (0.00–8.18) | 44.55 (23.64–65.45) | — |
+| Time Gap Awareness | 0.91 (0.00–2.73) | 3.64 (0.00–7.27) | 58.18 (40.00–75.45) | — |
+| Timezone Sensitivity | 87.27 (78.18–94.55) | 92.73 (83.64–99.09) | 81.82 (68.18–92.73) | — |
+| Mean Total Output Tokens per Run | 608.96 (533.37–686.50) | 1573.47 (1327.94–1856.57) | 332.64 (296.15–371.77) | <1e-08 |
+| Mean Total Thinking Tokens per Run | 0.00 (0.00–0.00) | 910.52 (705.34–1158.80) | 84.16 (71.18–98.27) | <1e-08 |
+| Mean Number of Think Blocks per Run | 0.00 (0.00–0.00) | 0.99 (0.98–1.00) | 1.67 (1.34–2.06) | 1.4e-04 |
+| Percentage with Think Blocks | 0.00 (0.00–0.00) | 99.22 (97.92–100.00) | 80.65 (73.51–87.40) | — |
+| Percentage with Heavy Markdown | 83.64 (77.01–89.61) | 90.91 (85.19–95.71) | 62.73 (53.51–71.69) | — |
+| Percentage with Light Markdown | 95.84 (92.60–98.31) | 98.31 (95.45–99.87) | 85.45 (79.74–90.65) | — |
+| Percentage with Any Degeneracy | 4.42 (2.60–6.49) | 18.18 (11.43–25.32) | 3.64 (1.95–5.97) | 4.2e-04 |
+| Percentage with Malformed Outputs | 0.00 (0.00–0.00) | 0.78 (0.00–2.08) | 1.95 (1.04–2.99) | — |
+| Percentage with Infinite Repetitions | 4.29 (2.47–6.23) | 0.91 (0.00–2.47) | 1.30 (0.52–2.34) | — |
+| Percentage with Reasoning Leakage | 0.13 (0.00–0.39) | 0.91 (0.13–1.95) | 1.17 (0.52–1.95) | — |
+| Percentage with Formatting Leakage | 0.00 (0.00–0.00) | 17.01 (10.39–24.16) | 1.17 (0.13–2.86) | — |

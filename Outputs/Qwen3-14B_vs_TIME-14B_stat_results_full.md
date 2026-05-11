@@ -1,0 +1,21 @@
+| Statistic | Qwen3 14B No Thinking | Qwen3 14B | TIME 14B | WSR p-value |
+| --- | --- | --- | --- | --- |
+| Benchmark Score | 29.48 (22.47–36.36) | 34.42 (28.44–40.65) | 64.80 (59.09–70.39) | 1.6e-06 |
+| Chronological Retrospection | 64.55 (38.18–88.18) | 55.45 (34.52–76.36) | 55.45 (39.09–70.00) | — |
+| Invalid Time Detection | 20.91 (0.00–43.64) | 19.09 (1.82–41.82) | 41.82 (25.45–59.09) | — |
+| Temporal Adaptivity | 18.18 (2.73–36.36) | 23.64 (9.09–40.91) | 84.55 (76.36–91.82) | — |
+| Temporal Contextual Awareness | 32.73 (8.18–59.09) | 42.73 (18.18–69.09) | 78.18 (63.64–90.00) | — |
+| Temporal Flow Anomaly Detection | 0.00 (0.00–0.00) | 1.82 (0.00–4.55) | 66.36 (48.18–83.64) | — |
+| Time Gap Awareness | 0.00 (0.00–0.00) | 4.55 (0.00–10.00) | 61.82 (43.64–79.09) | — |
+| Timezone Sensitivity | 70.00 (49.09–87.27) | 93.64 (90.00–97.27) | 65.45 (50.91–80.00) | — |
+| Mean Total Output Tokens per Run | 563.03 (486.58–641.05) | 1514.66 (1270.89–1785.34) | 317.21 (283.39–353.33) | <1e-08 |
+| Mean Total Thinking Tokens per Run | 0.00 (0.00–0.00) | 887.42 (683.44–1127.52) | 91.19 (76.67–111.07) | <1e-08 |
+| Mean Number of Think Blocks per Run | 0.00 (0.00–0.00) | 0.99 (0.98–1.00) | 1.90 (1.48–2.55) | 1.3e-08 |
+| Percentage with Think Blocks | 0.00 (0.00–0.00) | 99.09 (98.05–99.87) | 91.17 (86.36–95.45) | — |
+| Percentage with Heavy Markdown | 83.51 (75.84–90.26) | 86.36 (79.48–92.34) | 61.82 (52.60–70.78) | — |
+| Percentage with Light Markdown | 95.58 (90.78–99.35) | 97.40 (94.16–99.61) | 86.75 (81.43–91.43) | — |
+| Percentage with Any Degeneracy | 4.16 (1.56–7.66) | 15.45 (9.09–22.21) | 2.08 (0.65–3.77) | 5.3e-05 |
+| Percentage with Malformed Outputs | 0.00 (0.00–0.00) | 0.91 (0.13–2.08) | 0.26 (0.00–0.65) | — |
+| Percentage with Infinite Repetitions | 4.16 (1.69–7.66) | 1.30 (0.13–2.99) | 0.00 (0.00–0.00) | — |
+| Percentage with Reasoning Leakage | 0.00 (0.00–0.00) | 1.30 (0.39–2.47) | 0.78 (0.00–1.82) | — |
+| Percentage with Formatting Leakage | 0.00 (0.00–0.00) | 14.29 (8.18–21.04) | 1.17 (0.13–2.47) | — |

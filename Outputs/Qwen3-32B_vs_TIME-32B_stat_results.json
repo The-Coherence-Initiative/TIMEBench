@@ -1,0 +1,32 @@
+{
+    "benchmark_score": {
+        "wilcoxon_statistic": 207.0,
+        "p_value": 4.993421003381938e-07,
+        "significant": true,
+        "mode_used": "approx"
+    },
+    "percentage_degenerate": {
+        "wilcoxon_statistic": 162.0,
+        "p_value": 0.00042468530421630954,
+        "significant": true,
+        "mode_used": "approx"
+    },
+    "mean_number_of_think_blocks": {
+        "wilcoxon_statistic": 591.0,
+        "p_value": 0.00013583131318131012,
+        "significant": true,
+        "mode_used": "approx"
+    },
+    "mean_output_length": {
+        "wilcoxon_statistic": 0.0,
+        "p_value": 0.0,
+        "significant": true,
+        "mode_used": "exact"
+    },
+    "mean_total_reasoning_tokens": {
+        "wilcoxon_statistic": 0.0,
+        "p_value": 0.0,
+        "significant": true,
+        "mode_used": "exact"
+    }
+}

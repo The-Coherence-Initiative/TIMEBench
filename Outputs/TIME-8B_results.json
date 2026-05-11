@@ -1,0 +1,243 @@
+{
+    "llm_judge_summary": {
+        "analysis_type": "Accuracy based on mean score per scenario. Overall CI calculated with stratified bootstrap.",
+        "confidence_level": 0.95,
+        "bootstrap_replications": 10000,
+        "seed": 398186433,
+        "overall_accuracy": {
+            "observed_mean_accuracy_percent": 59.87,
+            "confidence_interval_95_percent": [
+                53.38,
+                66.23
+            ],
+            "scenarios": 77
+        },
+        "per_category_accuracy": {
+            "Chronological Retrospection": {
+                "observed_mean_accuracy_percent": 50.0,
+                "confidence_interval_95_percent": [
+                    33.64,
+                    65.45
+                ],
+                "scenarios": 11
+            },
+            "Invalid Time Detection": {
+                "observed_mean_accuracy_percent": 45.45,
+                "confidence_interval_95_percent": [
+                    23.64,
+                    67.27
+                ],
+                "scenarios": 11
+            },
+            "Temporal Adaptivity": {
+                "observed_mean_accuracy_percent": 80.0,
+                "confidence_interval_95_percent": [
+                    67.27,
+                    90.91
+                ],
+                "scenarios": 11
+            },
+            "Temporal Contextual Awareness": {
+                "observed_mean_accuracy_percent": 70.0,
+                "confidence_interval_95_percent": [
+                    50.0,
+                    87.27
+                ],
+                "scenarios": 11
+            },
+            "Temporal Flow Anomaly Detection": {
+                "observed_mean_accuracy_percent": 44.55,
+                "confidence_interval_95_percent": [
+                    30.91,
+                    58.18
+                ],
+                "scenarios": 11
+            },
+            "Time Gap Awareness": {
+                "observed_mean_accuracy_percent": 64.55,
+                "confidence_interval_95_percent": [
+                    48.18,
+                    79.09
+                ],
+                "scenarios": 11
+            },
+            "Timezone Sensitivity": {
+                "observed_mean_accuracy_percent": 64.55,
+                "confidence_interval_95_percent": [
+                    45.45,
+                    81.82
+                ],
+                "scenarios": 11
+            }
+        }
+    },
+    "advanced_structural_stats": {
+        "descriptive_stats": {
+            "output_length_stats": {
+                "min": 4,
+                "max": 1469,
+                "mean": 351.63,
+                "median": 307
+            },
+            "non_reasoning_output_length_stats": {
+                "min": 4,
+                "max": 1273,
+                "mean": 264.32,
+                "median": 224
+            },
+            "markdown_usage_stats": {
+                "percentage_of_runs_with_any_markdown": 87.92,
+                "percentage_with_heavy_markdown": 66.23,
+                "percentage_with_light_markdown": 86.88,
+                "usage_by_type_percentage": {
+                    "heavy": {
+                        "lists": 63.51,
+                        "headings": 31.56,
+                        "code_blocks": 12.73,
+                        "tables": 1.3
+                    },
+                    "light": {
+                        "bold_or_italics": 86.88
+                    }
+                }
+            },
+            "reasoning_stats": {
+                "number_of_think_blocks_per_run": {
+                    "min": 0,
+                    "max": 54,
+                    "mean": 2.06,
+                    "median": 1
+                },
+                "reasoning_tokens_per_run": {
+                    "min": 0,
+                    "max": 1241,
+                    "mean": 87.31,
+                    "median": 65
+                },
+                "reasoning_tokens_per_think_block": {
+                    "min": 7,
+                    "max": 267,
+                    "mean": 42.36,
+                    "median": 38
+                }
+            },
+            "structural_stats": {
+                "percentage_of_runs_with_think_blocks": 86.23,
+                "think_block_positioning_percentage": {
+                    "at_beginning": 20.1,
+                    "in_between": 79.27,
+                    "at_end": 0.63
+                },
+                "percentage_of_runs_with_degenerate_structure": 5.58,
+                "degenerate_structure_breakdown": {
+                    "malformed_blocks_percent": 2.21,
+                    "infinite_repetitions_percent": 0.26,
+                    "reasoning_leakage_percent": 0.91,
+                    "formatting_leakage_percent": 2.34,
+                    "formatting_leakage_by_type": {
+                        "lists": 94.44,
+                        "tables": 11.11
+                    }
+                }
+            }
+        },
+        "bootstrapped_stats": {
+            "analysis_type": "Metrics aggregated per-scenario, with CIs on the mean of those aggregates.",
+            "replications": 10000,
+            "seed": 3407,
+            "stats": {
+                "mean_output_length": {
+                    "observed_mean": 351.63,
+                    "confidence_interval_95_percent": [
+                        312.57,
+                        392.46
+                    ]
+                },
+                "mean_non_reasoning_length": {
+                    "observed_mean": 264.32,
+                    "confidence_interval_95_percent": [
+                        228.46,
+                        303.16
+                    ]
+                },
+                "percentage_with_heavy_markdown": {
+                    "observed_mean": 66.23,
+                    "confidence_interval_95_percent": [
+                        57.53,
+                        74.81
+                    ]
+                },
+                "percentage_with_light_markdown": {
+                    "observed_mean": 86.88,
+                    "confidence_interval_95_percent": [
+                        81.17,
+                        91.95
+                    ]
+                },
+                "percentage_degenerate": {
+                    "observed_mean": 5.58,
+                    "confidence_interval_95_percent": [
+                        2.6,
+                        9.48
+                    ]
+                },
+                "percentage_malformed": {
+                    "observed_mean": 2.21,
+                    "confidence_interval_95_percent": [
+                        0.91,
+                        3.9
+                    ]
+                },
+                "percentage_infinite_repetitions": {
+                    "observed_mean": 0.26,
+                    "confidence_interval_95_percent": [
+                        0.0,
+                        0.78
+                    ]
+                },
+                "percentage_with_reasoning_leakage": {
+                    "observed_mean": 0.91,
+                    "confidence_interval_95_percent": [
+                        0.13,
+                        2.21
+                    ]
+                },
+                "percentage_with_formatting_leakage": {
+                    "observed_mean": 2.34,
+                    "confidence_interval_95_percent": [
+                        0.52,
+                        4.55
+                    ]
+                },
+                "percentage_with_think_blocks": {
+                    "observed_mean": 86.23,
+                    "confidence_interval_95_percent": [
+                        80.39,
+                        91.56
+                    ]
+                },
+                "mean_number_of_think_blocks": {
+                    "observed_mean": 2.06,
+                    "confidence_interval_95_percent": [
+                        1.64,
+                        2.62
+                    ]
+                },
+                "mean_total_reasoning_tokens": {
+                    "observed_mean": 87.31,
+                    "confidence_interval_95_percent": [
+                        72.62,
+                        104.71
+                    ]
+                },
+                "mean_reasoning_token_percentage": {
+                    "observed_mean": 25.94,
+                    "confidence_interval_95_percent": [
+                        22.2,
+                        30.14
+                    ]
+                }
+            }
+        }
+    }
+}
